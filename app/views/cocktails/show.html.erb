@@ -1,19 +1,21 @@
-<div>
-  <h1><%= @cocktail.name %></h1>
-</div>
+<div class="container d-flex justify-content-between mt-3">
+  <div>
+    <h2><%= @cocktail.name %></h2>
+  </div>
 
-<div>
-  <p>Doses:</p>
-  <ul>
-    <% @cocktail.doses.each do |dose| %>
-      <li>
-        <%= "#{dose.description}: #{dose.ingredient.name}" %>
-        <%= link_to "Delete",
-            dose_path(dose),
-            method: :delete,
-            data: { confirm: "Are you sure?"} %>
-      </li>
-    <% end %>
-  </ul>
-  <%= link_to "Add dose", new_cocktail_dose_path(@cocktail) %>
+  <div>
+    <h4>Doses:</h4>
+    <ul>
+      <% @cocktail.doses.each do |dose| %>
+        <li>
+          <%= "#{dose.description}: #{dose.ingredient.name}" %>
+          <%= link_to "Delete",
+              dose_path(dose),
+              method: :delete,
+              data: { confirm: "Are you sure?"} %>
+        </li>
+      <% end %>
+    </ul>
+    <%= link_to "Add dose", new_cocktail_dose_path(@cocktail) %>
+  </div>
 </div>
