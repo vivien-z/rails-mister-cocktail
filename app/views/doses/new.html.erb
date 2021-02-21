@@ -1,11 +1,11 @@
-<div class="container mt-3">
+<div class="container my-3 card-shadow p-5">
   <h1>Add dose to <%= @cocktail.name %></h1>
 
   <div>
     <%= simple_form_for [@cocktail, @dose] do |f| %>
     <%= f.input :description %>
     <%= f.association :ingredient %>
-    <%= f.submit %>
+    <%= f.button :submit, class: "btn-purple mt-3" %>
     <% end %>
   </div>
 </div>

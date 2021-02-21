@@ -11,3 +11,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-image: linear-gradient(to right, rgba(109, 89, 122, .8), rgba(181, 101, 118,.8));
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.card-info-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}

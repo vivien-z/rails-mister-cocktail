@@ -1,22 +1,25 @@
-<div class="container d-flex justify-content-between mt-3">
-  <div>
-    <h2><%= @cocktail.name %></h2>
-    <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
-  </div>
+<div class="card-info-container d-flex flex-column p-5">
+  <h2 class="title"><strong><%= @cocktail.name.capitalize %></strong></h2>
+  <div class="card-info d-flex">
+    <div class="card-left">
+      <%= cl_image_tag @cocktail.photo.key, height: 300, crop: :fill, class: "card-shadow" %>
+    </div>
 
-  <div>
-    <h4>Doses:</h4>
-    <ul>
-      <% @cocktail.doses.each do |dose| %>
-        <li>
-          <%= "#{dose.description}: #{dose.ingredient.name}" %>
-          <%= link_to "Delete",
-              dose_path(dose),
-              method: :delete,
-              data: { confirm: "Are you sure?"} %>
-        </li>
-      <% end %>
-    </ul>
-    <%= link_to "Add dose", new_cocktail_dose_path(@cocktail) %>
+    <div class="card-right p-4 card-shadow">
+      <h4><strong>Doses:</strong></h4>
+      <ul>
+        <% @cocktail.doses.each do |dose| %>
+          <li>
+            <%= "#{dose.description}: #{dose.ingredient.name}" %>
+            <%= link_to "-",
+                dose_path(dose),
+                method: :delete,
+                data: { confirm: "Are you sure?"},
+                class: "btn-r-s" %>
+          </li>
+        <% end %>
+      </ul>
+      <%= link_to "Add dose", new_cocktail_dose_path(@cocktail), class: "btn-purple" %>
+    </div>
   </div>
 </div>

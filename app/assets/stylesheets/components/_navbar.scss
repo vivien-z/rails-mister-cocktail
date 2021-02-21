@@ -1,10 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
-  .icon {
-    color: rgb(252, 163, 17);
-    font-size: 30px;
-  }
+  background-image: linear-gradient(to right, rgb(109, 89, 122), rgb(181, 101, 118));
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -14,3 +10,19 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-lewagon .transparent .navbar {
+  background-color: transparent;
+  background-image: none;
+}
+
+#title {
+  color: rgb(252, 163, 17);
+  font-size: 22px;
+  margin-left: 10px;
+  &:hover {
+    text-decoration: none;
+    color: rgb(253, 197, 0);
+  }
+}
+
