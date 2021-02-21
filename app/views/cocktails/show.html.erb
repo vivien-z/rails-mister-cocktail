@@ -1,5 +1,9 @@
 <div class="card-info-container d-flex flex-column p-5">
-  <h2 class="title"><strong><%= @cocktail.name.capitalize %></strong></h2>
+  <div class="d-flex justify-content-between align-items-center title">
+    <h2><strong><%= @cocktail.name.capitalize %></strong></h2>
+    <%= link_to "remove", cocktail_path(@cocktail), method: :delete,
+                     data: { confirm: "Are you sure?"}, class: "btn-purple" %>
+  </div>
   <div class="card-info d-flex">
     <div class="card-left">
       <%= cl_image_tag @cocktail.photo.key, height: 300, crop: :fill, class: "card-shadow" %>
