@@ -41,16 +41,18 @@
 
 .btn-purple {
   color: rgb(36, 0, 70);
+  // text-shadow: 1px 1px 1px rgb(109, 89, 122);
+
   border: 1px solid rgb(36, 0, 70);
   font-size: 18px;
-  background: rgba(89, 60, 109, 0.05);
+  background: rgba(89, 60, 109, 0.2);
   padding: 4px 20px;
-  border-radius: 16px;
+  border-radius: 20px;
   transition: background 0.2s ease;
   &:hover {
     text-decoration: none;
     color: rgb(36, 0, 70);
-    background: rgba(89, 60, 109, 0.2);
+    background: rgba(89, 60, 109, 0.05);
   }
 }
 
