@@ -1,4 +1,6 @@
 class CocktailsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:new, :create, :destroy]
+
   def index
     @cocktails = Cocktail.all
   end
