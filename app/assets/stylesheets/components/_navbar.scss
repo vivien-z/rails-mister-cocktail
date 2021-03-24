@@ -26,3 +26,19 @@
   }
 }
 
+.nav-link {
+  margin-right: 16px;
+  color: rgb(36, 0, 70) !important;
+  border-bottom: 3px solid rgba(252, 163, 17, 0);
+  padding-bottom: 0;
+  &:hover {
+    transition: .35s ease-in-out;
+    border-bottom: 3px solid rgb(252, 163, 17);
+  }
+}
+
+.nav-item.active {
+  .nav-link {
+    border-bottom: 3px solid rgb(252, 163, 17);
+  }
+}
