@@ -1,14 +1,11 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background-image: linear-gradient(to right, rgb(109, 89, 122), rgb(181, 101, 118));
+  background: black;
+  // background-image: linear-gradient(to right, rgb(109, 89, 122), rgb(181, 101, 118));
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
 }
 
 .navbar-lewagon .transparent .navbar {
@@ -17,28 +14,31 @@
 }
 
 .title {
-  color: rgb(252, 163, 17);
-  font-size: 22px;
-  margin-left: 10px;
+  color: $m-white;
+  font-size: 52px;
+  font-family: $nv-logo;
+  margin-left: 16px;
   &:hover {
     text-decoration: none;
-    color: rgb(253, 197, 0);
+    color: $m-ored;
   }
 }
 
 .nav-link {
   margin-right: 16px;
-  color: rgb(36, 0, 70) !important;
+  color: $m-white !important;
+  font-size: 20px;
+  font-family: $nv-option;
   border-bottom: 3px solid rgba(252, 163, 17, 0);
   padding-bottom: 0;
   &:hover {
     transition: .35s ease;
-    border-bottom: 3px solid rgb(252, 163, 17);
+    border-bottom: 3px solid $m-ored;
   }
 }
 
 .nav-item.active {
   .nav-link {
-    border-bottom: 3px solid rgb(252, 163, 17);
+    border-bottom: 3px solid $m-ored;
   }
 }

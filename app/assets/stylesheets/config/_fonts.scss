@@ -1,5 +1,7 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&family=Open+Sans:wght@300;400;600;700&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
@@ -13,4 +15,5 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 //        font-url('FontFile.woff') format('woff'),
 //        font-url('FontFile.ttf') format('truetype')
 // }
-// $my-font: "Font Name";
+$nv-logo: "Nova Cut", cursive;
+$nv-option: 'Open Sans', sans-serif;
