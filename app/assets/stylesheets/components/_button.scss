@@ -1,3 +1,13 @@
+.btn-black {
+  background: black;
+  padding: 4px 60px;
+  color: $m-white;
+  &:hover {
+    background: $m-ored;
+    color: $m-white;
+  }
+}
+
 .btn-flat {
   color: rgb(109, 89, 122);
   padding: 6px 24px;

@@ -9,12 +9,12 @@
         <i class="far fa-trash-alt"></i>
       <% end %>
     </div>
-    <div class="card-info p-4 card-shadow flex-column">
+    <div class="card-info card-shadow flex-column">
       <div>
         <h4><strong>Ingredient:</strong></h4>
         <ul>
           <% @cocktail.doses.each do |dose| %>
-            <li>
+            <li class="card-list d-flex justify-content-between">
               <%= "#{dose.ingredient.name}: #{dose.description}" %>
               <%= link_to dose_path(dose), method: :delete,
                   data: { confirm: "Are you sure, you want to remove this ingredient?"}, class: "card-icon ml-5" do %>
@@ -23,21 +23,17 @@
             </li>
           <% end %>
         </ul>
-      </div>
-      <div class="">
-        <%= link_to new_cocktail_dose_path(@cocktail), class: "card-icon ml-5" do %>
-          <i class="fas fa-plus-square"></i>
-        <% end %>
+        <div class="">
+          <%= link_to new_cocktail_dose_path(@cocktail), class: "card-icon btn-black" do %>
+            <i class="fas fa-plus"></i>
+          <% end %>
+        </div>
       </div>
     </div>
 
   </div>
-
-
-  <div class="card-img">
-    <%= cl_image_tag @cocktail.photo.key, height: 300, crop: :fill, class: "card-shadow" %>
+  <div class="card-right">
+    <%= cl_image_tag @cocktail.photo.key, height: 240, crop: :fill, class: "card-shadow" %>
   </div>
-
-
 
 </div>
