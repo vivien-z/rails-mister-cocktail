@@ -1,13 +1,13 @@
-<div class="container my-3 card-shadow p-5">
+<div class="container my-3 p-5">
   <div>
-    <h2>Add a new cocktail</h2>
+    <h2 class="text-option mb-3"><strong>Add a new cocktail</strong></h2>
   </div>
 
   <div>
     <%= simple_form_for(@cocktail) do |f| %>
     <%= f.input :name %>
     <%= f.input :photo, as: :file %>
-    <%= f.button :submit, class: "btn-purple mt-3" %>
+    <%= f.button :submit, class: "btn-black mt-3" %>
     <% end %>
   </div>
 </div>
