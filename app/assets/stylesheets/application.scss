@@ -15,6 +15,7 @@
 body {
   // background-image: linear-gradient(to right, rgba(109, 89, 122, .8), rgba(181, 101, 118,.8));
   background: $m-white;
+  font-family: $nv-option;
 }
 
 .container {
@@ -24,5 +25,5 @@ body {
 
 .card-info-container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 900px;
 }
