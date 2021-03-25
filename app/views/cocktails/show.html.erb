@@ -3,7 +3,7 @@
   <div class="card-left">
 
     <div class="card-top d-flex justify-content-between align-items-center">
-      <h2 class="card-title"><strong><%= @cocktail.name.capitalize %></strong></h2>
+      <h2 class="card-title text-logo"><strong><%= @cocktail.name.capitalize %></strong></h2>
       <%= link_to cocktail_path(@cocktail), method: :delete,
           data: { confirm: "Are you sure, you want to delete this cocktail recipe?"}, class: "card-icon ml-5" do %>
         <i class="far fa-trash-alt"></i>
