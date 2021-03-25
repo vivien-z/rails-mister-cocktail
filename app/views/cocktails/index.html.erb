@@ -1,20 +1,20 @@
 <div class="cards">
 
     <% @cocktails.each do |cocktail| %>
-      <% if cocktail.photo.attached? %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                                          url('<%= cl_image_path cocktail.photo.key, :crop => :fill %>');">
-      <% else %>
-        <div class="card-category" style="background-image: none;">
-      <% end %>
-          <%= link_to "#{cocktail.name}", cocktail_path(cocktail), class: "card-text" %>
-          <%= link_to "-", cocktail_path(cocktail), method: :delete,
-                                data: { confirm: "Are you sure?"}, class: "btn-frame" %>
+      <div class="card-sm">
+        <% if cocktail.photo.attached? %>
+          <div class="card-sm-top" style="background-image: url('<%= cl_image_path cocktail.photo.key, width: 360, height: 220, crop: :fill %>');"></div>
+        <% else %>
+          <div class="card-sm-top" style="background-image: none;"></div>
+        <% end %>
+        <div class="pt-3">
+            <%= link_to "#{cocktail.name.capitalize}", cocktail_path(cocktail), class: "card-text" %>
         </div>
+      </div>
     <% end %>
 
-    <div class="card-category add">
-      <%= link_to "+", new_cocktail_path, class: "card-category add" %>
+    <div class="card-sm-add">
+      <%= link_to "+", new_cocktail_path, class: "add" %>
     </div>
 
 </div>
