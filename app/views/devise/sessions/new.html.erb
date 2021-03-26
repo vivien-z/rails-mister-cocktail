@@ -1,5 +1,4 @@
-<%= render "shared/navbar" %>
-<div class="container form mt-3 p-3">
+<div class="container-form form mt-3 p-5">
   <h2>Log in</h2>
 
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -15,7 +14,7 @@
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit, "Log in", class: "btn-form mb-2" %>
+      <%= f.button :submit, "Log in", class: "btn-black mb-2" %>
     </div>
   <% end %>
 
