@@ -8,92 +8,102 @@
   }
 }
 
-.btn-flat {
-  color: rgb(109, 89, 122);
-  padding: 6px 24px;
-  border-radius: 4px;
-  background: rgb(252, 163, 17);
-  transition: background 0.2s ease;
+.btn-sm-orange {
+  background: $m-ored;
+  padding: 4px 30px;
+  color: $m-white;
   &:hover {
-    text-decoration: none;
-    background: rgb(253, 197, 0);
-    color: rgb(109, 89, 122);
-    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    background: black;
+    color: $m-white;
   }
 }
 
-.btn-form {
-  color: white;
-  padding: 6px 24px;
-  border-radius: 4px;
-  background: rgb(109, 89, 122);
-  transition: background 0.3s ease;
-  &:hover {
-    background: rgba(109, 89, 122, 0.7);
-    text-decoration: none;
-    color: white;
-  }
-}
+// .btn-flat {
+//   color: rgb(109, 89, 122);
+//   padding: 6px 24px;
+//   border-radius: 4px;
+//   background: rgb(252, 163, 17);
+//   transition: background 0.2s ease;
+//   &:hover {
+//     text-decoration: none;
+//     background: rgb(253, 197, 0);
+//     color: rgb(109, 89, 122);
+//     box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+//   }
+// }
 
-.btn-frame {
-  color: rgb(253, 197, 0);
-  border: 1px solid rgb(253, 197, 0);
-  background: rgba(253, 197, 0, 0.05);
-  padding: 4px 20px;
-  border-radius: 16px;
-  transition: background 0.2s ease;
-  &:hover {
-    text-decoration: none;
-    color: rgb(252, 163, 17);
-    border: 1px solid rgb(252, 163, 17);
-  }
-}
+// .btn-form {
+//   color: white;
+//   padding: 6px 24px;
+//   border-radius: 4px;
+//   background: rgb(109, 89, 122);
+//   transition: background 0.3s ease;
+//   &:hover {
+//     background: rgba(109, 89, 122, 0.7);
+//     text-decoration: none;
+//     color: white;
+//   }
+// }
 
-.btn-purple {
-  color: rgb(36, 0, 70);
-  // text-shadow: 1px 1px 1px rgb(109, 89, 122);
+// .btn-frame {
+//   color: rgb(253, 197, 0);
+//   border: 1px solid rgb(253, 197, 0);
+//   background: rgba(253, 197, 0, 0.05);
+//   padding: 4px 20px;
+//   border-radius: 16px;
+//   transition: background 0.2s ease;
+//   &:hover {
+//     text-decoration: none;
+//     color: rgb(252, 163, 17);
+//     border: 1px solid rgb(252, 163, 17);
+//   }
+// }
 
-  border: 1px solid rgb(36, 0, 70);
-  font-size: 18px;
-  background: rgba(89, 60, 109, 0.2);
-  padding: 4px 20px;
-  border-radius: 20px;
-  transition: background 0.2s ease;
-  &:hover {
-    text-decoration: none;
-    color: rgb(36, 0, 70);
-    background: rgba(89, 60, 109, 0.05);
-  }
-}
+// .btn-purple {
+//   color: rgb(36, 0, 70);
+//   // text-shadow: 1px 1px 1px rgb(109, 89, 122);
 
-.btn-r-s {
-  color: rgb(36, 0, 70);
-  border: 1px solid rgb(36, 0, 70);
-  background: rgba(89, 60, 109, 0.05);
-  font-size: 16px;
-  padding: 0 6px;
-  border-radius: 16px;
-  margin-left: 12px;
-  &:hover {
-    text-decoration: none;
-    color: rgb(36, 0, 70);
-    background: rgba(89, 60, 109, 0.2);
-    font-weight: bold;
-  }
-}
+//   border: 1px solid rgb(36, 0, 70);
+//   font-size: 18px;
+//   background: rgba(89, 60, 109, 0.2);
+//   padding: 4px 20px;
+//   border-radius: 20px;
+//   transition: background 0.2s ease;
+//   &:hover {
+//     text-decoration: none;
+//     color: rgb(36, 0, 70);
+//     background: rgba(89, 60, 109, 0.05);
+//   }
+// }
 
-.icon {
-  color: rgb(109, 89, 122);
-  font-size: 20px;
-  background-color: rgb(252, 163, 17);
-  padding:5px 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  &:hover {
-    color: rgb(109, 89, 122);
-    text-decoration: none;
-    background-color: rgb(253, 197, 0);
-    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
-  }
-}
+// .btn-r-s {
+//   color: rgb(36, 0, 70);
+//   border: 1px solid rgb(36, 0, 70);
+//   background: rgba(89, 60, 109, 0.05);
+//   font-size: 16px;
+//   padding: 0 6px;
+//   border-radius: 16px;
+//   margin-left: 12px;
+//   &:hover {
+//     text-decoration: none;
+//     color: rgb(36, 0, 70);
+//     background: rgba(89, 60, 109, 0.2);
+//     font-weight: bold;
+//   }
+// }
+
+// .icon {
+//   color: rgb(109, 89, 122);
+//   font-size: 20px;
+//   background-color: rgb(252, 163, 17);
+//   padding:5px 10px;
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50%;
+//   &:hover {
+//     color: rgb(109, 89, 122);
+//     text-decoration: none;
+//     background-color: rgb(253, 197, 0);
+//     box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+//   }
+// }
